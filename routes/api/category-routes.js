@@ -26,7 +26,7 @@ router.get('/:id', (req, res) => {
     },
     include: {
       model: Product,
-      attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
+      attributes: ['id', 'product_name']
     }
   })
   .then(dbCategoryData => {
@@ -34,6 +34,7 @@ router.get('/:id', (req, res) => {
       res.status(404).json({ message: 'No result found with this id!'});
       return;
     }
+    res.json(dbCategoryData);
   })
   .catch(err => {
     console.log(err);
