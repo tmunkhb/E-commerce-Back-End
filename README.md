@@ -5,7 +5,7 @@ This application was created as back-end for e-commerce site using Express.js AP
 ## Installation
 - Clone the repo
 - npm init
-- npm install (to install all dependencies such as mysql2, sequelize, dotenv
+- npm install (to install all dependencies such as mysql2, sequelize, dotenv)
 - create .env file in root of directory and write the following code with personal mysql username and password:
 DB_NAME='ecommerce_db'
 DB_USER='root'
